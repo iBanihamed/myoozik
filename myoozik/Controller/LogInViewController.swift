@@ -32,6 +32,7 @@ class LogInViewController: UIViewController {
             
             if error != nil {
                 print(error!)
+                SVProgressHUD.dismiss()
             } else {
                 SVProgressHUD.dismiss()
                 print("Log In Successful!")
